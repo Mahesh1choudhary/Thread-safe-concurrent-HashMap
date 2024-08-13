@@ -7,7 +7,7 @@ This implementation of hash map is thread safe. It is quite optimal and efficien
 #### Basic approach
 The basic approach to make hash map thrad safe is to keep lock on entire structure, but this is completely inefficient
 
-### My approach
+### Better Approach
 Lets first define certain terms and data structures that are used in this approach.
 1. HashNode-> A node in a linkedlist with key-value pair and next pointer
 2. HashBucket -> linkedlist of HashNodes
